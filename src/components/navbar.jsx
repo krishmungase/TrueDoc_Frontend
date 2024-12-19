@@ -3,28 +3,28 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='container mx-auto -z-10'>
-      <nav className="p-4">
+    <div className='container mx-auto -z-10' >
+      <nav className="px-4 py-2">
         <div className="max-w-screen-xl py-2 mx-auto flex justify-between items-center px-28">
-          <a href="/" className="text-2xl font-extrabold text-primary relative z-10">TrueDoc</a>
-          <ul className="flex space-x-6">
+          <a href="/" className="text-3xl font-extrabold text-primary relative z-10">TrueDoc</a>
+          <ul className="flex space-x-6  px-4  py-4 rounded-full text-primary font-semibold">
             <li>
-              <a href="#how-it-works" className="text-sm text-primary relative z-10">
+              <a href="#how-it-works" className="text-sm  relative z-10">
                 How It Works
               </a>
             </li>
             <li>
-              <a href="#features" className="text-sm text-primary relative z-10">
+              <a href="#features" className="text-sm  relative z-10">
                 Features
               </a>
             </li>
             <li>
-              <a href="#pricing" className="text-sm text-primary relative z-10">
+              <a href="#pricing" className="text-sm  relative z-10">
                 Pricing
               </a>
             </li>
             <li>
-              <a href="#faq" className="text-sm text-primary relative z-10">
+              <a href="#faq" className="text-sm  relative z-10">
                 FAQ
               </a>
             </li>

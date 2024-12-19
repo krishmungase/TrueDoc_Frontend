@@ -5,7 +5,7 @@ import Navbar from './components/navbar'
 
 const App = () => {
   return (
-    <div className="w-screen min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
