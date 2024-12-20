@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Image, Select } from 'antd';
+import { Button, Image, Select } from 'antd';
 import Dragger from 'antd/es/upload/Dragger';
 import UploadImg from "../img/file.png";
+import SideDesign from '../components/side-design';
 
 
 const getBase64 = (file) =>
@@ -33,7 +34,8 @@ const UploadPage = () => {
 
   return (
     <div className="container mx-auto h-screen">
-      <div className="flex flex-col space-y-8 md:space-y-16 my-8 md:my-32 items-center justify-center max-w-4xl mx-auto">
+      <SideDesign />
+      <div className="z-10 flex flex-col space-y-8 md:space-y-16 my-8 md:my-32 items-center justify-center max-w-4xl mx-auto">
         <div className="text-center space-y-4">
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-800">
             Upload Your Documents
@@ -46,7 +48,7 @@ const UploadPage = () => {
         <div className="w-full space-y-4">
           <div className="w-full px-2">
             <Select
-              className="w-full bg-turnary"
+              className="w-full bg-secondary"
               placeholder="Select document type"
               onChange={handleOptionChange}
               value={selectedOption}
@@ -90,6 +92,10 @@ const UploadPage = () => {
               />
             )}
           </div>
+
+          <Button className='w-full bg-primary hover:bg-primary'>
+            Verify
+          </Button>
         </div>
       </div>
     </div>
